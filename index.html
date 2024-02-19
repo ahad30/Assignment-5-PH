@@ -367,7 +367,7 @@
                             <div class="font-bold">Discount Price:</div>
                             <div><span id="Discount-Price">0</span></div>
                         </div>
-                        <div class="relative">
+                        <div class="relative" id="btn-input">
 
                             <input type="text" id="Coupone" placeholder="Have any coupone"
                                 class="w-full rounded-md border-gray-200  shadow-sm sm:text-sm py-5 px-3">
@@ -382,9 +382,10 @@
                             <div class="font-bold">Grand Total:</div>
                             <div><span id="Grand-Total">0</span></div>
                         </div>
+
                
                         <div class="text-center">
-                            <button class="btn w-full bg-[#1DD100] text-white" onclick="my_modal_1.showModal()">Next</button>
+                            <button  id="modal-btn" class="btn w-full bg-[#1DD100] text-white" onclick="my_modal_1.showModal()">Next</button>
                             <dialog id="my_modal_1" class="modal">
                                 <div class="modal-box">
                                     <div class="flex items-center justify-center">
@@ -397,7 +398,7 @@
                                     <div class="modal-action">
                                         <form method="dialog">
                                             <!-- if there is a button in form, it will close the modal -->
-                                            <button class="btn bg-[#1DD100] text-white">Close</button>
+                                            <button  class="btn bg-[#1DD100] text-white">Close</button>
                                         </form>
                                     </div>
                                 </div>
